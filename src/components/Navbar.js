@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
-                        YRN <i className="fab fa-pied-piper"></i>
+                        YRN  <i className="fab fa-pied-piper"></i>
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         {/* Si click es true, poner una clase, si no, poner la otra. */}
