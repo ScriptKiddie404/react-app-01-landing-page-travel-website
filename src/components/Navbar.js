@@ -1,21 +1,35 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Button from './Button';
+import './Navbar.css';
 
 const Navbar = () => {
 
     // Hooks
     const [click, setClick] = useState(false);
+    const [button, setButton] = useState(true);
 
     // Handle functions
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+
+    // Configuramos si se muestra el botón en función del tamaño de la ventana:
+    const showButton = () => {
+        if (window.innerWidth <= 960) {
+            setButton(false);
+        } else {
+            setButton(true);
+        }
+    }
+    // Ejecutamos la función creada previamente.
+    window.addEventListener('resize', showButton);
 
     return (
         <>
             <div className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
-                        YRN <i class="fab fa-pied-piper"></i>
+                        YRN <i className="fab fa-pied-piper"></i>
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         {/* Si click es true, poner una clase, si no, poner la otra. */}
@@ -38,6 +52,13 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
+                    {/* 
+                        && es un shorthand, regresa lo que le sigue
+                        Notar que estamos mandando como CHILDREN el "SIGN-UP", eso es lo que será
+                        renderizado dentro del botón.
+                        Ahora sólo debemos mandar todas las propiedades.
+                    */}
+                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                 </div>
             </div>
         </>
