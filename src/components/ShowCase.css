@@ -7,7 +7,7 @@ video {
 }
 
 .showcase-container {
-  height: 100vh;
+  height: 100vh; /*return 100vh*/
   width: 100%;
   display: flex;
   flex-direction: column;
