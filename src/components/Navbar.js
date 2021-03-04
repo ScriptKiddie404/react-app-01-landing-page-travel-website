@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import './Navbar.css';
@@ -21,8 +21,15 @@ const Navbar = () => {
             setButton(true);
         }
     }
+
+    // Ejecutamos una vez la función de showButton.
+    useEffect(() => {
+        showButton();
+    }, []);
+
     // Ejecutamos la función creada previamente.
     window.addEventListener('resize', showButton);
+
 
     return (
         <>
