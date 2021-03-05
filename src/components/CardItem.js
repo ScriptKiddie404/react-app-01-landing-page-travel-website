@@ -9,7 +9,7 @@ function CardItem({ path, label, src, text }) {
                     <figure className='cards__item__pic-wrap' data-category={label}>
                         <img
                             className='cards__item__img'
-                            alt='Travel Image'
+                            alt='Beautiful place to travel'
                             src={src}
                         />
                     </figure>

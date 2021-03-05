@@ -24,13 +24,7 @@ function Cards() {
                         />
                         <CardItem
                             src={imagen2}
-                            text=''
-                            label='Sahara'
-                            path='/services'
-                        />
-                        <CardItem
-                            src={imagen2}
-                            text=''
+                            text='Walk through the most exotic deserts!'
                             label='Sahara'
                             path='/services'
                         />
@@ -38,13 +32,13 @@ function Cards() {
                     <ul className='cards__items'>
                         <CardItem
                             src={imagen3}
-                            text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
+                            text='Feel the exciting cold of Antarctica!'
                             label='Antarctica'
                             path='/services'
                         />
                         <CardItem
                             src={imagen4}
-                            text='Experience Football on Top of the Himilayan Mountains'
+                            text='Get to know the beautiful landscapes of Norway!'
                             label='Norway'
                             path='/products'
                         />
@@ -52,13 +46,13 @@ function Cards() {
                     <ul className='cards__items'>
                         <CardItem
                             src={imagen5}
-                            text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
+                            text='Marvel at the beautiful Aurora Borealis!'
                             label='Northern Lights'
                             path='/services'
                         />
                         <CardItem
                             src={imagen6}
-                            text='Experience Football on Top of the Himilayan Mountains'
+                            text='Enjoy the wonderful New Zealand weather!'
                             label='New Zealand'
                             path='/products'
                         />
