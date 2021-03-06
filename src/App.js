@@ -31,7 +31,7 @@ const App = () => {
             <ClipLoader
               color={"#4A90E2"}
               loading={loading}
-              size={50} />
+              size={25} />
           </div>
           :
           <Router>
