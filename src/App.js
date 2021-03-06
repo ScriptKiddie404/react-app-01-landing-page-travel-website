@@ -6,6 +6,7 @@ import './App.css';
 import Services from './components/pages/Services';
 import SignUp from './components/pages/SignUp';
 import Products from './components/pages/Products';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/products" component={Products} />
           <Route path="/sign-up" component={SignUp} />
         </Switch>
+        <Footer />
       </Router>
     </>
   );
