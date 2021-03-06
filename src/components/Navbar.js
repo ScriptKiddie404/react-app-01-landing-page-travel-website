@@ -54,8 +54,8 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className='nav-element'>
-                            <Link to='/sign-ip' className='nav-links' onClick={closeMobileMenu}>
-                                Sign Up
+                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                                Products
                             </Link>
                         </li>
                     </ul>

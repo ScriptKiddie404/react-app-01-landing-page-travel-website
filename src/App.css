@@ -10,23 +10,28 @@
 .products,
 .sign-up {
   display: flex;
-  height: 90vh;
+  height: 100vh;
+  width: 100%;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
 }
 
-/videos/video-1.mp4 .services {
-  background-image: url("./images/img-2.jpg");
+.services {
+  /* background-image: url("./images/image-aurora.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
+    url("./images/image-aurora.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
+  width: 100%;
   font-size: 100px;
 }
 
 .products {
-  /* background-image: url("./images/img-1.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
+    url("./images/image-amazonas.jpg");
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -35,7 +40,8 @@
 }
 
 .sign-up {
-  /* background-image: url("./images/img-8.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
+    url("./images/image-norway.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
