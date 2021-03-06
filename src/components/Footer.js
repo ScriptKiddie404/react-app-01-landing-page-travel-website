@@ -10,18 +10,6 @@ const Footer = () => {
                 <p className='footer-subscription-heading'>
                     Subscribe to our daily newsletter to receive more information and promotions for all types of budgets.
                 </p>
-
-                {/* <div className='input-areas'>
-                    <form>
-                        <input
-                            className='footer-input'
-                            name='email'
-                            type='email'
-                            placeholder='Email'
-                        />
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
-                    </form>
-                </div> */}
                 <SignUpForm />
             </section>
             <div className='footer-links'>
